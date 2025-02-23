@@ -1,4 +1,9 @@
-# React + Vite
+#Description
+
+"I'm currently learning React and exploring its core features like hooks and React Router ,props etc. 
+I have built a small BMI calculator project and will be working on more projects to enhance my skills.
+
+React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
