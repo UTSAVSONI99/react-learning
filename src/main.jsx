@@ -10,6 +10,7 @@ import { createRoot } from "react-dom/client";
 // import CurrencyConverter from './CurrencyConverter.jsx'
 import "./index.css";
 import BMI from "./BMI-prj/BMI.jsx";
+import Calc from "./Calculator/Calculator.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,6 +21,11 @@ createRoot(document.getElementById("root")).render(
     {/* <PasswordGenerator /> */}
     {/* <CurrencyConverter /> */}
     {/* <Location /> */}
-    <BMI />
+    {/* <BMI /> */}
+    <div className="flex items-center justify-center min-h-screen text-white bg-[#141414]">
+
+    <Calc />
+    </div>
+   
   </StrictMode>
 );

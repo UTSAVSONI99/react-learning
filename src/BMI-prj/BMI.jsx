@@ -55,7 +55,7 @@ function BMI() {
             <label> Height (ft.)</label>
             <input
               type="text"
-              placeholder="Enter Weight value"
+              placeholder="Enter Height value"
               value={height}
               onChange={(e) => setHeight(e.target.value)}
               className="border border-gray-300 rounded-lg p-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
