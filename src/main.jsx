@@ -11,6 +11,10 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import BMI from "./BMI-prj/BMI.jsx";
 import Calc from "./Calculator/Calculator.jsx";
+import WordCounter from "./Word-Counter/WordCounter.jsx";
+import Counter from "./Counter/Counter.jsx";
+
+import Weather from "./Weather/Weather.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -22,10 +26,12 @@ createRoot(document.getElementById("root")).render(
     {/* <CurrencyConverter /> */}
     {/* <Location /> */}
     {/* <BMI /> */}
-    <div className="flex items-center justify-center min-h-screen text-white bg-[#141414]">
+    {/* <div className="flex items-center justify-center min-h-screen text-white bg-[#141414]">
+      <Calc />
+    </div> */}
 
-    <Calc />
-    </div>
-   
+    {/* <WordCounter /> */}
+    {/* <Counter /> */}
+    <Weather />
   </StrictMode>
 );
