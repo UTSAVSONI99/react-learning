@@ -9,10 +9,10 @@ import { createRoot } from "react-dom/client";
 // import PasswordGenerator from "./PasswordGenerator.jsx";
 // import CurrencyConverter from './CurrencyConverter.jsx'
 import "./index.css";
-import BMI from "./BMI-prj/BMI.jsx";
-import Calc from "./Calculator/Calculator.jsx";
-import WordCounter from "./Word-Counter/WordCounter.jsx";
-import Counter from "./Counter/Counter.jsx";
+// import BMI from "./BMI-prj/BMI.jsx";
+// import Calc from "./Calculator/Calculator.jsx";
+// import WordCounter from "./Word-Counter/WordCounter.jsx";
+// import Counter from "./Counter/Counter.jsx";
 
 import Weather from "./Weather/Weather.jsx";
 
