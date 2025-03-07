@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
-import "./Weather.css";
+import { useState } from "react";
 
 function Weather() {
   const [city, setCity] = useState("Delhi");
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
 
-  // Get current date
   const currentDate = new Date();
   const months = [
     "January",
@@ -31,28 +29,22 @@ function Weather() {
     "Friday",
     "Saturday",
   ];
-
-  const month = months[currentDate.getMonth()];
-  const dayName = days[currentDate.getDay()];
-  const day = currentDate.getDate();
-  const year = currentDate.getFullYear();
-
-  const formattedDate = `${dayName}, ${month} ${day}, ${year}`;
+  
+  const formattedDate = `${days[currentDate.getDay()]}, ${
+    months[currentDate.getMonth()]
+  } ${currentDate.getDate()}, ${currentDate.getFullYear()}`;
 
   const API_key = "bcda10ba323e88e96cb486015a104d1d";
 
-  // Fetch weather data
   const fetchWeatherData = async () => {
     try {
-      setError(null); // Reset error before fetching
+      setError(null);
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}&units=metric`
       );
-
       if (!response.ok) {
         throw new Error("City not found");
       }
-
       const data = await response.json();
       setWeatherData(data);
     } catch (err) {
@@ -61,75 +53,66 @@ function Weather() {
     }
   };
 
-  // Fetch weather data on component mount and when the city changes
-  useEffect(() => {
-    fetchWeatherData();
-  }, [city]);
-
-  // Handle city input change
-  const handleCityChange = (e) => {
-    setCity(e.target.value);
-  };
-
-  // Handle form submission
+  const handleCityChange = (e) => setCity(e.target.value);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetchWeatherData();
+    fetchWeatherData(); // Fetch data only when the button is clicked
   };
-
-  // Get weather icon URL
 
   const getWeatherIconUrl = (main) => {
     switch (main) {
       case "Clear":
-        return "/sun.png"; // Path to your sunny weather icon
+        return "/sun.png";
       case "Rain":
-        return "/thunder.png"; // Path to your rainy weather icon
-      case "Snow":
-        return "/tornado.png"; // Path to your snowy weather icon
+        return "/thunder.png";
+      case "Clouds":
+        return "/tornado.png";
       case "Haze":
-        return "/sun.png"; // Path to your haze weather icon
-      // Add more cases for other weather conditions as needed
+        return "/sun.png";
       default:
-        return null;
+        return "/default.png"; // Default icon if not found
     }
   };
+
   return (
-    <div className="App">
-      <div className="container">
-        <h1 className="container_date">{formattedDate}</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-500 text-white p-6">
+      <h1 className="text-2xl font-bold mb-4">{formattedDate}</h1>
+      {error && (
+        <p className="bg-red-500 px-4 py-2 rounded-md text-center">{error}</p>
+      )}
 
-        {error && <p className="error">{error}</p>}
-
-        {weatherData && (
-          <div className="weather_data">
-            <h2 className="container_city">{weatherData.name}</h2>
-            <img
-              className="container_img"
-              src={getWeatherIconUrl(weatherData.weather[0].main)}
-              width="180px"
-              alt="Weather Icon"
-            />
-            <h2 className="container_degree">{weatherData.main.temp}°C</h2>
-            <h2 className="container_para">
-              {weatherData.weather[0].main}
-              <span className="degree_icon"></span>
-            </h2>
-          </div>
-        )}
-
-        <form className="form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            className="input"
-            placeholder="Enter city name"
-            value={city}
-            onChange={handleCityChange}
-            required
+      {weatherData && (
+        <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
+          <h2 className="text-xl font-semibold mb-2">{weatherData.name}</h2>
+          <img
+            src={getWeatherIconUrl(weatherData.weather[0].main)}
+            className="w-32 mb-2"
+            alt="Weather Icon"
           />
-          <button type="submit">Get Weather</button>
-        </form>
-      </div>
+          <h2 className="text-4xl font-bold">{weatherData.main.temp}°C</h2>
+          <h2 className="text-lg mt-2">{weatherData.weather[0].main}</h2>
+        </div>
+      )}
+
+      <form
+        onSubmit={handleSubmit}
+        className="mt-6 flex flex-col md:flex-row gap-2"
+      >
+        <input
+          type="text"
+          placeholder="Enter city name"
+          value={city}
+          onChange={handleCityChange}
+          required
+          className="px-4 py-2 rounded-md border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <button
+          type="submit"
+          className="bg-blue-600 px-4 py-2 rounded-md text-white font-semibold hover:bg-blue-700 transition"
+        >
+          Get Weather
+        </button>
+      </form>
     </div>
   );
 }

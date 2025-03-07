@@ -15,6 +15,7 @@ import "./index.css";
 // import Counter from "./Counter/Counter.jsx";
 
 import Weather from "./Weather/Weather.jsx";
+import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -32,6 +33,7 @@ createRoot(document.getElementById("root")).render(
 
     {/* <WordCounter /> */}
     {/* <Counter /> */}
-    <Weather />
+    {/* <Weather /> */}
+    <CurrencyConverter />
   </StrictMode>
 );
