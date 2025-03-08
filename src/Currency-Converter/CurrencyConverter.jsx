@@ -9,6 +9,7 @@ function CurrencyConverter() {
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("INR");
+
   useEffect(() => {
     const apiURL = `https://v6.exchangerate-api.com/v6/eba65d84e054939109983776/latest/${fromCurrency}`;
     axios
@@ -50,7 +51,12 @@ function CurrencyConverter() {
 
   return (
     <div className="card">
-      <img src="/exchange.gif" width="60" alt="test" />
+      <img
+        src="/exchange.gif"
+        style={{ backgroundColor: "#ffffff" }}
+        width="80"
+        alt="test"
+      />
       {/* wrapper */}
       <h1>Currency Converter</h1>
       <div className="currency_exchange">
@@ -99,9 +105,7 @@ function CurrencyConverter() {
       </div>
       {/* output */}
       <div className="output">
-        <h2>
-          converted Amount:<b>{convertedAmount}</b>
-        </h2>
+        <h2>converted Amount:{convertedAmount}</h2>
       </div>
     </div>
   );

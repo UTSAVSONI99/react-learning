@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f0f2f5;
+  background-color: #eea2a4;
   font-family: "Inter", sans-serif;
 }
 
@@ -82,13 +82,14 @@ h1 {
 }
 
 .output {
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 h2 {
   width: 50%;
   margin-top: 20px;
-  background-color: #e8f8fd;
+  color: #002147;
+  background-color: #ffd700;
   padding: 26px;
   border-radius: 10px;
 }
