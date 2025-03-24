@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contact = () => {
   return (
     <div className="container form-signin w-100 m-auto text-center px-4 py-5 my-5 ">
@@ -15,7 +13,7 @@ const Contact = () => {
                 id="floatingInput"
                 placeholder="name@example.com"
               />
-              <label for="floatingInput">Email address</label>
+              <label htmlFor="floatingInput">Email address</label>
             </div>
             <div className="form-floating py-5">
               <input
@@ -24,7 +22,7 @@ const Contact = () => {
                 id="floatingPassword"
                 placeholder="Password"
               />
-              <label for="floatingPassword">Password</label>
+              <label htmlFor="floatingPassword">Password</label>
             </div>
 
             <div className="checkbox mb-3">

@@ -19,7 +19,8 @@ import "./App.css";
 // import Weather from "./Weather/Weather.jsx";
 // import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
 // import Darkmode from "./Darkmode/Darkmode.jsx";
-import Relod from "./Relod.jsx";
+// import Relod from "./Relod.jsx";
+import Travel from "./Travel/Travel.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -40,6 +41,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Weather /> */}
     {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
-    <Relod />
+    {/* <Relod /> */}
+    <Travel />
   </StrictMode>
 );
