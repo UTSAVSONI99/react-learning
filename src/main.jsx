@@ -17,7 +17,10 @@ import "./App.css";
 // import Counter from "./Counter/Counter.jsx";
 
 // import Weather from "./Weather/Weather.jsx";
-import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
+// import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
+// import Test from "./Test.jsx";
+// import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
+import Todo from "./Todo/Todo.jsx";
 // import Darkmode from "./Darkmode/Darkmode.jsx";
 // import Relod from "./Relod.jsx";
 
@@ -38,8 +41,11 @@ createRoot(document.getElementById("root")).render(
     {/* <WordCounter /> */}
     {/* <Counter /> */}
     {/* <Weather /> */}
-    <CurrencyConverter />
+    {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
     {/* <Relod /> */}
+    {/* <Test /> */}
+    {/* <ToggleSwitch /> */}
+    <Todo />
   </StrictMode>
 );

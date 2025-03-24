@@ -29,7 +29,7 @@ function Weather() {
     "Friday",
     "Saturday",
   ];
-  
+
   const formattedDate = `${days[currentDate.getDay()]}, ${
     months[currentDate.getMonth()]
   } ${currentDate.getDate()}, ${currentDate.getFullYear()}`;
