@@ -18,9 +18,15 @@ import "./App.css";
 
 // import Weather from "./Weather/Weather.jsx";
 // import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
+// import Test from "./Test.jsx";
+// import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
+import Todo from "./Todo/Todo.jsx";
 // import Darkmode from "./Darkmode/Darkmode.jsx";
 // import Relod from "./Relod.jsx";
+<<<<<<< HEAD
 import Travel from "./Travel/Travel.jsx";
+=======
+>>>>>>> e158427e674acfe9a12909fea8a53d0bfdeb0b92
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -42,6 +48,12 @@ createRoot(document.getElementById("root")).render(
     {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
     {/* <Relod /> */}
+<<<<<<< HEAD
     <Travel />
+=======
+    {/* <Test /> */}
+    {/* <ToggleSwitch /> */}
+    <Todo />
+>>>>>>> e158427e674acfe9a12909fea8a53d0bfdeb0b92
   </StrictMode>
 );

@@ -1,13 +1,7 @@
 #Description
 
-"I'm currently learning React and exploring its core features like hooks and React Router ,props etc. 
-I have built a small BMI calculator project and will be working on more projects to enhance my skills.
+"I have hands-on experience in React and have built projects like a Weather Data app, Currency Converter, and Password Generator and other projects. Through these projects, I have gained a strong understanding of key React concepts such as API fetching, state management, props, and React Router. I am continuously exploring advanced features to enhance my development skills and build more dynamic web applications."
 
-React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Weather](./public/weather.png)
+![Password Generator](./public/password.png)
+![Currency Converter](./public/currency.png)
