@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import "./App.css";
+// import "./index.css";
+// import "./App.css";
 
 // import Location from "./Location.jsx";
 // import App from './App.jsx'
@@ -23,10 +23,6 @@ import "./App.css";
 import Todo from "./Todo/Todo.jsx";
 // import Darkmode from "./Darkmode/Darkmode.jsx";
 // import Relod from "./Relod.jsx";
-<<<<<<< HEAD
-import Travel from "./Travel/Travel.jsx";
-=======
->>>>>>> e158427e674acfe9a12909fea8a53d0bfdeb0b92
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -48,12 +44,9 @@ createRoot(document.getElementById("root")).render(
     {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
     {/* <Relod /> */}
-<<<<<<< HEAD
-    <Travel />
-=======
+
     {/* <Test /> */}
     {/* <ToggleSwitch /> */}
     <Todo />
->>>>>>> e158427e674acfe9a12909fea8a53d0bfdeb0b92
   </StrictMode>
 );
