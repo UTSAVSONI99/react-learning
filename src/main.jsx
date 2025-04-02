@@ -16,17 +16,15 @@ import "./App.css";
 // import WordCounter from "./Word-Counter/WordCounter.jsx";
 // import Counter from "./Counter/Counter.jsx";
 
-// import Weather from "./Weather/Weather.jsx";
+import Weather from "./Weather/Weather.jsx";
 // import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
 // import Test from "./Test.jsx";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
-import Todo from "./Todo/Todo.jsx";
+// import Todo from "./Todo/Todo.jsx";
 // import Darkmode from "./Darkmode/Darkmode.jsx";
 // import Relod from "./Relod.jsx";
-<<<<<<< HEAD
-import Travel from "./Travel/Travel.jsx";
-=======
->>>>>>> e158427e674acfe9a12909fea8a53d0bfdeb0b92
+
+// import Travel from "./Travel/Travel.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -44,16 +42,15 @@ createRoot(document.getElementById("root")).render(
 
     {/* <WordCounter /> */}
     {/* <Counter /> */}
-    {/* <Weather /> */}
+    <Weather />
     {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
     {/* <Relod /> */}
-<<<<<<< HEAD
-    <Travel />
-=======
+
+    {/* <Travel /> */}
+
     {/* <Test /> */}
     {/* <ToggleSwitch /> */}
-    <Todo />
->>>>>>> e158427e674acfe9a12909fea8a53d0bfdeb0b92
+    {/* <Todo /> */}
   </StrictMode>
 );
