@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import "./App.css";
+// import "./index.css";
+// import "./App.css";
 
 // import Location from "./Location.jsx";
 // import App from './App.jsx'
@@ -23,8 +23,11 @@ import Weather from "./Weather/Weather.jsx";
 // import Todo from "./Todo/Todo.jsx";
 // import Darkmode from "./Darkmode/Darkmode.jsx";
 // import Relod from "./Relod.jsx";
+<<<<<<< HEAD
 
 // import Travel from "./Travel/Travel.jsx";
+=======
+>>>>>>> 8f6b59a32e007ce321a289b8c9e3f23653785084
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -47,10 +50,16 @@ createRoot(document.getElementById("root")).render(
     {/* <Darkmode /> */}
     {/* <Relod /> */}
 
+<<<<<<< HEAD
     {/* <Travel /> */}
 
     {/* <Test /> */}
     {/* <ToggleSwitch /> */}
     {/* <Todo /> */}
+=======
+    {/* <Test /> */}
+    {/* <ToggleSwitch /> */}
+    <Todo />
+>>>>>>> 8f6b59a32e007ce321a289b8c9e3f23653785084
   </StrictMode>
 );
