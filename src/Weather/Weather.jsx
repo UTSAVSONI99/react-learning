@@ -54,6 +54,7 @@ function Weather() {
   };
 
   const handleCityChange = (e) => setCity(e.target.value);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchWeatherData(); // Fetch data only when the button is clicked

@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 // import "./index.css";
 // import "./App.css";
 
+import Registration from "./Registration.jsx";
+
 // import Location from "./Location.jsx";
 // import App from './App.jsx'
 // import Practise from './Practise.jsx'
@@ -16,7 +18,7 @@ import { createRoot } from "react-dom/client";
 // import WordCounter from "./Word-Counter/WordCounter.jsx";
 // import Counter from "./Counter/Counter.jsx";
 
-import Weather from "./Weather/Weather.jsx";
+// import Weather from "./Weather/Weather.jsx";
 // import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
 // import Test from "./Test.jsx";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
@@ -42,7 +44,8 @@ createRoot(document.getElementById("root")).render(
 
     {/* <WordCounter /> */}
     {/* <Counter /> */}
-    <Weather />
+    {/* <Weather /> */}
+    <Registration />
     {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
     {/* <Relod /> */}
