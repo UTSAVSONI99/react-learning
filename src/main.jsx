@@ -1,12 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { CgPokemon } from "react-icons/cg";
 // import "./index.css";
 // import "./App.css";
 
 // import Registration from "./Registration.jsx";
 // import RegistrationForm from "./RegistrationForm.jsx";
 // import LoginForm from "./LoginForm.jsx";
-import ContactForm from "./ContactForm.jsx";
+
+// import ContactForm from "./ContactForm.jsx";
 
 // import Location from "./Location.jsx";
 // import App from './App.jsx'
@@ -22,6 +24,7 @@ import ContactForm from "./ContactForm.jsx";
 // import Counter from "./Counter/Counter.jsx";
 
 // import Weather from "./Weather/Weather.jsx";
+import Pokemon from "./pokemon/pokemon.jsx";
 // import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
 // import Test from "./Test.jsx";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
@@ -51,7 +54,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Registration /> */}
     {/* <RegistrationForm /> */}
     {/* <LoginForm /> */}
-    <ContactForm />
+    {/* <ContactForm /> */}
     {/* <CurrencyConverter /> */}
     {/* <Darkmode /> */}
     {/* <Relod /> */}
@@ -61,5 +64,6 @@ createRoot(document.getElementById("root")).render(
     {/* <Test /> */}
     {/* <ToggleSwitch /> */}
     {/* <Todo /> */}
+    <Pokemon />
   </StrictMode>
 );
