@@ -1,5 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+// import { App2 } from "./DarkMode/App2";
+import { Reducer } from "./hooks/useReducer/Reducer";
 // import { CgPokemon } from "react-icons/cg";
 // import "./index.css";
 // import "./App.css";
@@ -25,7 +27,7 @@ import { createRoot } from "react-dom/client";
 
 // import Weather from "./Weather/Weather.jsx";
 // import Pokemon from "./pokemon/pokemon.jsx";
-import { App } from "./ContextAPI/App.jsx";
+// import { App1 } from "./ContextAPI/App.jsx";
 // import CurrencyConverter from "./Currency-Converter/CurrencyConverter.jsx";
 // import Test from "./Test.jsx";
 // import { ToggleSwitch } from "./ToggleSwitch/ToggleSwitch.jsx";
@@ -66,6 +68,8 @@ createRoot(document.getElementById("root")).render(
     {/* <ToggleSwitch /> */}
     {/* <Todo /> */}
     {/* <Pokemon /> */}
-    <App />
+    {/* <App1 /> */}
+    {/* <App2 /> */}
+    <Reducer />
   </StrictMode>
 );

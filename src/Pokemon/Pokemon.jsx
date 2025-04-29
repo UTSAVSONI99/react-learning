@@ -1,4 +1,3 @@
-import React from "react";
 import "./Pokemon.css";
 import { useState, useEffect } from "react";
 import { PokemonCard } from "./PokemonCard";
@@ -64,7 +63,7 @@ export default function Pokemon() {
   return (
     <div className="container">
       <header>
-        <h1> Let's Catch Pokemon</h1>
+        <h1> Let&apos;s Catch Pokemon</h1>
       </header>
       <div className="pokemon-search">
         <input

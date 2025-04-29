@@ -1,5 +1,4 @@
-import React, { createContext } from "react";
-import { unstable_setDevServerHooks } from "react-router-dom";
+import { createContext, use } from "react";
 
 export const BioContext = createContext();
 export const BioProvider = ({ children }) => {
@@ -18,6 +17,7 @@ export const BioProvider = ({ children }) => {
 // custom hook
 export const useBioContext = () => {
   const context = use(BioContext);
+
   if (context === undefined) {
     throw new Error("Component must be wrapped with BioProvider");
   }
