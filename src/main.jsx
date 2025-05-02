@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 // import { App2 } from "./DarkMode/App2";
-import { Reducer } from "./hooks/useReducer/Reducer";
+// import { Reducer } from "./hooks/useReducer/Reducer";
+import { ReactMemo } from "./hooks/Memo/ReactMemo";
 // import { CgPokemon } from "react-icons/cg";
 // import "./index.css";
 // import "./App.css";
@@ -70,6 +71,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Pokemon /> */}
     {/* <App1 /> */}
     {/* <App2 /> */}
-    <Reducer />
+    {/* <Reducer /> */}
+    <ReactMemo />
   </StrictMode>
 );
